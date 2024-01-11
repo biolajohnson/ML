@@ -1,4 +1,6 @@
-class Linear_Regression:
+import numpy as np
+
+class Logistic_Regression:
   def __init__(self, x, y):
     self._fit(x, y)
 
@@ -48,7 +50,8 @@ class Linear_Regression:
 
     for i in range(m):
       f_wb = w * self.x[i] + b
-      total_cost += (f_wb - self.y[i]) ** 2
+      cost = 1 / 1 + np.exp(f_wb)
+      total_cost += cost
 
     total_cost /= m
     total_cost /= 2
@@ -75,6 +78,7 @@ class Linear_Regression:
         print(f"iter: {i}, cost: {cost}")
     return w, b
   
+    #TODO: IMPLEMENT REGULARIZATION
 
-   #TODO: IMPLEMENT REGULARIZATION
+
 
