@@ -8,9 +8,9 @@ Algorithms to implement:
 - guassion models
 - perceptrons
 - neural networks
---- CNN
---- RNN
---- GANs
---- LSTM
---- Transformers
+  - CNN
+  - RNN
+  - GANs
+  - LSTM
+  - Transformers
 
